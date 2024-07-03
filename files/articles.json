@@ -1,0 +1,32 @@
+[
+    {
+        "name": "shoe",
+        "categorie": "men shoe",
+        "price" : 15000
+
+    }
+    , {
+        "name": "soap",
+        "categorie": "toilet soap",
+        "price" : 1500
+
+    },
+    {
+        "name": "t-shirt",
+        "categorie": "lacoste",
+        "price" : 150000
+
+    },
+    {
+        "name": "socks",
+        "categorie": "short socks",
+        "price" : 1000
+
+    },
+    {
+        "name": "underware",
+        "categorie": "men underware",
+        "price" : 5000
+
+    }
+]

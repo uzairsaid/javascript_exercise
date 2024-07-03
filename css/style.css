@@ -1,0 +1,102 @@
+/* nav {
+    display: flex;
+    background-image: url(../html/profile_picture.JPG);
+    
+}
+.page-header {
+    display: block;
+    background-image: url(../html/profile_picture.JPG);
+    background-repeat: no-repeat ;
+    background-position: fixed;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    align-items: flex-start;
+    padding: 10px;
+}
+.articles {
+    margin-top: 34px;
+    display: block;
+}
+
+.bttn-search{
+    align-self: flex-end;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.img img {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    border-radius: 5%;
+}
+.img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.form-elements {
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-bottom: 0;
+    margin-top: 34px;
+}
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+h2 {
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+
+/* using flex box */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #356999;
+    flex-direction: row;
+}
+
+nav ul{
+    display: flex;
+    background-color: #356999;
+    justify-content: space-between;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+nav ul li a{
+    color: white;
+}
+
+#img-profil {
+    width: 15em;
+    height: 8em;
+}
+/* main {
+    display: flex;
+    flex-direction: row-reverse;
+} */
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
