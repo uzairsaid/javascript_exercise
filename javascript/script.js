@@ -133,9 +133,44 @@ async function displayingArticles(){
           
       }
   }
+
+// fetching data from an external api
+ function fetchingApiData(){
+  // let burundiLat = -3.6156;
+  // let burundiLong = 29.9256;
+  const appid = "dde0a4dcefbdab3fac4077a9e9c86a05";
+  const checkBttn = document.getElementById("validateBttn");
+  let displaySpace = document.querySelector(".weather-data");
+  displaySpace.innerHTML = "";
+  checkBttn.addEventListener("click", async(event)=>{
+    console.log("ndinjira")
+    event.preventDefault();
+    let latitude = document.getElementById("lat").value;
+    let longitude = document.getElementById("lon").value;
+    console.log(latitude)
+    try {
+      //this is an API from openweathermap.org 
+      // it is a current weather data api
+      const response = await fetch('https://api.openweathermap.org/data/2.5/weather?lat='+latitude+'&lon='+longitude+'&appid='+appid+'');
+      const weatherData = await response.json();
+     
+      displaySpace.innerHTML = `<label>Name : ${weatherData.name} </label>`+`<br>`+`<label>Weather : ${weatherData.weather[0].main}</label>`+`<br>`+`<label>Description : ${weatherData.weather[0].description}</label>`+`<br>`+`<label>Wind Speed : ${weatherData.wind.speed}</label>`+`<br>`+`<label>Country : ${weatherData.sys.country}</label>`;
+
+      console.log("weatherdescription "+ weatherData.weather[0].description)
+      console.log("weather data "+weatherData.name);
+      
+    } catch (error) {
+      console.log(error)
+      
+    }
+    })
+  
+  
+  }
 try {
   displayingArticles();
   searchArticle();
+  fetchingApiData();
   
 } catch (error) {
   console.log(error)

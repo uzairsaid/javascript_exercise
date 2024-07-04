@@ -1,0 +1,19 @@
+{
+  "name": "front_prepation",
+  "version": "1.0.0",
+  "description": "frontend initiation ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uzairsaid/javascript_exercise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uzairsaid/javascript_exercise/issues"
+  },
+  "homepage": "https://github.com/uzairsaid/javascript_exercise#readme"
+}
